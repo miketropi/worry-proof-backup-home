@@ -18,14 +18,14 @@ export default function Footer() {
   const footerLinks = {
     product: [
       { name: 'Features', href: '#features' },
-      { name: 'Pricing', href: '#pricing' },
+      { name: 'Pricing', href: '#', customClass: 'line-through' },
       { name: 'Download', href: '#download' },
       { name: 'Changelog', href: '#changelog' },
     ],
     support: [
       { name: 'Documentation', href: '#docs' },
       { name: 'Help Center', href: '#help' },
-      { name: 'Community', href: '#community' },
+      { name: 'Community', href: '#community' }, 
       { name: 'Contact Us', href: '#contact' },
     ],
     company: [
@@ -90,7 +90,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-600 text-sm transition-colors duration-200"
+                    className={`text-gray-600 hover:text-blue-600 text-sm transition-colors duration-200 ${link.customClass || ''}`}
                   >
                     {link.name}
                   </a>
