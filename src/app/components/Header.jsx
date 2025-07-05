@@ -1,11 +1,13 @@
+import Link from 'next/link';
+
 export default function Header() {
   // Navigation items array - easy to update
-  const navigationItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Features', href: '#features' },
-    { name: 'Documentation', href: '#documentation' },
-    // { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+  const navigationItems = [ 
+    { name: 'Home', href: '/' }, 
+    { name: 'Features', href: '/' },
+    { name: 'Documentation', href: '/documentation' },
+    // { name: 'About', href: '#about' }, 
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -33,13 +35,13 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4">
             {navigationItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md">
               Download Plugin

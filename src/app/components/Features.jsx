@@ -76,7 +76,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-7xl mx-auto px-4 py-12" id="FEATURES">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">Features</h2>
       <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
         Complete WordPress backup solution with database and file protection. 
