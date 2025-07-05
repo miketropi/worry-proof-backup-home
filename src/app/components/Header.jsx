@@ -17,18 +17,20 @@ export default function Header() {
           {/* Brand */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-gray-900">
-                <span className="text-blue-600">Worry Proof</span>
-                <span className="text-gray-700"> Backup</span>
-                {process.env.NEXT_PUBLIC_WP_BACKUP_VERSION && (
-                  <span className="text-xs text-gray-500 ml-2">
-                    v{process.env.NEXT_PUBLIC_WP_BACKUP_VERSION}
-                  </span>
-                )}
-              </h1>
-              <p className="text-xs text-gray-500 hidden sm:block">
-                WordPress Backup Solution
-              </p>
+              <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
+                <h1 className="text-xl font-bold text-gray-900">
+                  <span className="text-blue-600">Worry Proof</span>
+                  <span className="text-gray-700"> Backup</span>
+                  {process.env.NEXT_PUBLIC_WP_BACKUP_VERSION && (
+                    <span className="text-xs text-gray-500 ml-2">
+                      v{process.env.NEXT_PUBLIC_WP_BACKUP_VERSION}
+                    </span>
+                  )}
+                </h1>
+                <p className="text-xs text-gray-500 hidden sm:block">
+                  WordPress Backup Solution
+                </p>
+              </Link>
             </div>
           </div>
 
