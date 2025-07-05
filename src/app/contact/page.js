@@ -167,7 +167,7 @@ export default function Contact() {
           Contact Us
         </h1>
         <p className="text-md text-gray-600 max-w-2xl mx-auto">
-          Have questions about Worry Proof Backup? We're here to help you keep your WordPress site safe and secure.
+          Have questions about Worry Proof Backup? We&lsquo;re here to help you keep your WordPress site safe and secure.
         </p>
       </div>
 
@@ -179,14 +179,14 @@ export default function Contact() {
               <Mail className="w-6 h-6 text-blue-600" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a Message</h2>
-            <p className="text-gray-600">We'll get back to you as soon as possible</p>
+            <p className="text-gray-600">We&lsquo;ll get back to you as soon as possible</p>
           </div>
           
           {/* Success/Error Messages */}
           {submitStatus === 'success' && (
             <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
               <p className="text-green-800 font-medium">
-                ✅ Thank you! Your message has been sent successfully. We'll get back to you soon.
+                ✅ Thank you! Your message has been sent successfully. We&lsquo;ll get back to you soon.
               </p>
             </div>
           )}
