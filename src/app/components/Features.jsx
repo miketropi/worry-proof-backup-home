@@ -37,12 +37,6 @@ const features = [
     icon: Folder,
   },
   {
-    id: '9f81b6c2',
-    title: 'Demo Content Import (coming soon)',
-    description: 'Coming soon! One-click demo content that actually works. Perfect for developers who want to test stuff without the hassle! 🔥',
-    icon: FlaskConical,
-  },
-  {
     id: '5a2ecb98',
     title: 'Modern Admin UI',
     description: 'Super clean and modern dashboard built with React! Looks amazing and works like a dream. No more ugly old-school interfaces! ✨',
@@ -71,6 +65,12 @@ const features = [
     title: 'Backup Status Tracking',
     description: 'See exactly what\'s happening with your backups! Track progress, check history, and know everything is working perfectly! 📈',
     icon: BarChart2,
+  },
+  {
+    id: '9f81b6c2',
+    title: 'Initialize dummy data (coming soon)',
+    description: 'Coming soon! One-click dummy data that actually works. Perfect for developers who want to test stuff without the hassle! 🔥',
+    icon: FlaskConical,
   },
 ];
 

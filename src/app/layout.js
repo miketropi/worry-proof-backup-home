@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TopBar from "./components/TopBar";
 import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${spaceMono.variable} antialiased`}
       >
+        <TopBar />
         <Header />
         {children}
         <Footer />
