@@ -2,6 +2,27 @@ import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
 import { Calendar, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+    },
+    alternates: {
+      canonical: `https://worryproofbackup.com/blog/${slug}`,
+    },
+  }
+}
+
 export async function generateStaticParams() {
   return getAllPostSlugs().map(slug => ({ slug }))
 }

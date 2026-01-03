@@ -55,3 +55,11 @@ pre.shiki {
     font-family: var(--font-google-sans-code) !important;
   }
 }
+
+.markdown-body {
+
+  table {
+    display: table;
+    width: 100%;
+  }
+}

@@ -2,6 +2,13 @@ import Link from 'next/link'
 import { getAllPostSlugs, getPostBySlug } from '@/lib/posts'
 import { Calendar } from 'lucide-react'
 
+export async function generateMetadata() {
+  return {
+    title: 'Our Articles',
+    description: 'Our articles about WordPress backup, tips, insights, and updates.',
+  }
+}
+
 export default async function BlogPage() {
   const slugs = getAllPostSlugs()
   const posts = await Promise.all(slugs.map(getPostBySlug))
