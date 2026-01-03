@@ -5,6 +5,8 @@ export default function Header() {
   const navigationItems = [ 
     { name: 'Home', href: '/' }, 
     { name: 'Features', href: '/' },
+    // blog
+    { name: 'Articles', href: '/blog' },
     { name: 'Documentation', href: '/documentation' },
     // { name: 'About', href: '#about' }, 
     { name: 'Contact', href: '/contact' },
@@ -22,12 +24,12 @@ export default function Header() {
                   <span className="text-blue-600">Worry Proof</span>
                   <span className="text-gray-700"> Backup</span>
                   {process.env.NEXT_PUBLIC_WP_BACKUP_VERSION && (
-                    <span className="text-xs text-gray-500 ml-2">
+                    <span className="text-xs text-gray-500 ml-2 font-google-sans-code">
                       v{process.env.NEXT_PUBLIC_WP_BACKUP_VERSION}
                     </span>
                   )}
                 </h1>
-                <p className="text-xs text-gray-500 hidden sm:block">
+                <p className="text-xs text-gray-500 hidden sm:block font-google-sans-code">
                   WordPress Backup Solution
                 </p>
               </Link>
@@ -40,14 +42,18 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 font-google-sans-code"
               >
                 {item.name}
               </Link>
             ))}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md">
+            <Link 
+              href="https://wordpress.org/plugins/worry-proof-backup/"
+              target="_blank"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
+            >
               Download Plugin
-            </button>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -88,10 +94,13 @@ export default function Header() {
               </a>
             ))}
             <div className="pt-2">
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200 shadow-sm hover:shadow-md">
+              <Link 
+                href="https://wordpress.org/plugins/worry-proof-backup/"
+                target="_blank"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200 shadow-sm hover:shadow-md">
                 Download Plugin
-              </button>
-            </div>
+              </Link>
+            </div> 
           </div>
         </div>
       </div>

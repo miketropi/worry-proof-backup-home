@@ -1,6 +1,6 @@
 export default function TopBar() {
   return (
-    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-google-sans-code">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center py-2">
           {/* Desktop/Tablet Display */}

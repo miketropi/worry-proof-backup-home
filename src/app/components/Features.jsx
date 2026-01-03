@@ -83,7 +83,7 @@ export default function Features() {
         Automated backups, secure storage, and one-click restoration.
       </p>
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white rounded-2xl shadow-md border border-gray-100">
+        <table className="min-w-full bg-white rounded-2xl shadow-md border border-gray-100 font-google-sans-code">
           <thead>
             <tr>
               <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700"></th>

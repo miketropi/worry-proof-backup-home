@@ -1,14 +1,9 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TopBar from "./components/TopBar";
-import { Space_Mono } from "next/font/google";
+// import { Space_Mono, Google_Sans } from "next/font/google";
 import "./globals.css";
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 export const metadata = {
   title: "Worry Proof Backup",
@@ -19,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.variable} antialiased`}
+        className={`font-google-sans antialiased`}
       >
         <TopBar />
         <Header />

@@ -56,9 +56,9 @@ export default function Footer() {
                 <span className="text-gray-700"> Backup</span>
               </h3>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            <p className="text-gray-600 text-sm leading-relaxed mb-4 font-google-sans-code">
               Your WordPress site deserves the best backup solution! 
-              <Shield className="inline w-4 h-4 ml-1 text-blue-600" />
+              <Shield className="inline w-4 h-4 ml-1 text-blue-600" /> { ' ' }
               No more sleepless nights worrying about data loss.
             </p>
             <div className="flex space-x-4">
